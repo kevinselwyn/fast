@@ -1,8 +1,8 @@
-#fast
+# fast
 
 Javascript reproduction of Netflix's Fast.com functionality to determine your network's download speed
 
-##Usage
+## Usage
 
 First, include `fast.js` in your project.
 
@@ -14,12 +14,14 @@ var fast = new Fast(doneFunction, updateFunction);
 
 `updateFuncion` will fire on speed test updates and returns a variable `rate`, which is your network's speed in megabits/sec
 
-##Example
+## Example
 
 To try out the functionality, open `index.html` (in a server setting)
 
+NOTE: The server must run at port 8000 because it seems to be the only port that is whitelisted for CORS
+
 ![Speed Test](speed.gif)
 
-##Acknowledgements
+## Acknowledgements
 
 All credit to Netflix for their amazing eff you to internet service providers who like to throttle network speeds indiscriminately
